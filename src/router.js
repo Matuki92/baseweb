@@ -1,15 +1,15 @@
-import { createWebHistory, createRouter } from "vue-router";
-import Home from "@/components/Home.vue";
-import NotFound from "@/components/NotFound.vue";
+import { createWebHistory, createRouter } from 'vue-router';
+import Home from '@/components/Home.vue';
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home,
   },
   {
-    path: "/:catchAll(.*)",
+    path: '/:catchAll(.*)',
     component: NotFound,
   },
 ];
